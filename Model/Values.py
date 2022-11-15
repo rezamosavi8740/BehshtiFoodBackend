@@ -31,5 +31,5 @@ class FoodValues(BaseModel):
 
 
 class CategoriesValues(BaseModel):
-    
+
     categories:str
