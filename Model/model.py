@@ -35,7 +35,7 @@ class Foods(Base):
     price = Column(Integer)
     imgURL  = Column(String)
     description = Column(String)
-    categories = Column(String ,ForeignKey("Categories.id"))
+    categories = Column(Integer ,ForeignKey("Categories.id"))
     number = Column(Integer)
     orderFood = relationship("Foods" ,back_populates = "foodOrders")
     categoriesRel = relationship("Categories" ,back_populates = "foodRel")
